@@ -1,0 +1,17 @@
+{
+  "name": "annotationsite",
+  "displayName": "annotationsite",
+  "expo": {
+    "name": "annotationsite",
+    "slug": "annotationsite",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
