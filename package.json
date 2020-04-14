@@ -5,7 +5,9 @@
     "ios": "react-native run-ios",
     "web": "expo start --web",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "serve": "http-server ./web-build -p 8080",
+    "upload": "echo \"TODO: Add bucket name\" # aws s3 sync web-build/ s3://<bucketname here>"
   },
   "dependencies": {
     "@expo/vector-icons": "^10.0.6",
