@@ -8,11 +8,11 @@ import styles from "../../helpers/styles";
 const HasUpdate = ({ color = "#3b3", fgcolor = "#efe" }) => {
   const [ hasUpdate, setHasUpdate ] = useState(false);
 
-  useEffect(async () => {
+  useEffect(() => {
     if (!hasUpdate) {
-      await Updates.checkForUpdateAsync();
-      await Updates.fetchUpdateAsync();
-      setHasUpdate(true);
+      Updates.fetchUpdateAsync()
+        .then(({ isNew }) => setHasUpdate(isNew))
+        .catch(e => console.log("Issue with update", e));
     }
   }, []);
 
