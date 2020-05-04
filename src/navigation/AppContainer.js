@@ -1,12 +1,9 @@
-import { createBrowserApp } from "@react-navigation/web";
-import { createSwitchNavigator } from "react-navigation";
+import { createSwitchNavigator, createAppContainer } from "react-navigation";
 
 import { MainScreen } from "../screens";
 
-export default createBrowserApp(
+export default createAppContainer(
   createSwitchNavigator({
-    MainScreen
+    MainScreen,
   })
 );
-
-
